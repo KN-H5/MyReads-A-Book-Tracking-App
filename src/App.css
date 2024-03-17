@@ -1,0 +1,165 @@
+@import '~semantic-ui-css/semantic.css';
+@import '~react-toastify/dist/ReactToastify.css';
+
+body {
+    overflow-y: scroll;
+}
+
+#root {
+    background: #000000 url('./img/erol-ahmed-460283-unsplash-w1800-h1800.jpg') no-repeat center left fixed;
+    background-size: cover;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgba(80, 1, 1, 0.5);
+    /* background-image: linear-gradient(-225deg, #ff057c85 0%, #7c64d5d9 48%, #4cc3ffcc 100%); */
+    background-image: linear-gradient(60deg, #3d339321 0%, #2b76b9c7 35%, #2cacd1ad 65%, #35eb9361 100%);
+}
+
+#content {
+    flex: 1;
+}
+
+.ui.card > .content.light-gradient {
+    background-image: linear-gradient(60deg, #3d339321 0%, #2b76b926 35%, #2cacd152 65%, #05ff8638 100%);
+}
+
+/*
+ * MENU TOP
+ */
+
+header.top.fixed.menu {
+    z-index: 1100;
+}
+
+#branding h1 {
+    margin: 0;
+    line-height: 1;
+}
+
+#branding img {
+    margin-right: 1.5em;
+}
+
+/*
+ * CONTENT
+ */
+
+#content {
+    padding-top: calc(73px + 1rem);
+}
+
+.ui.segment.shelve,
+.ui.segment.search,
+.ui.segment.not-found {
+    margin: 2rem 0 4rem;
+    border-radius: 0;
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px #ffffff33 inset;
+}
+
+.book-cover-card-image,
+.book-cover-modal-image {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+/*
+ * FOOTER
+ */
+
+#footer-content {
+    padding: 2em 0;
+}
+
+#footer-content img {
+    margin-bottom: 1em;
+}
+
+/*
+ * SEMANTIC-UI OVERRIDES
+ */
+
+.ui.centered.cards {
+    padding: 2em 0;
+}
+
+.ui.cards > .card,
+.ui.card {
+    width: 260px;
+    background-image: linear-gradient(-225deg, #ff057c85 0%, #7c64d5d9 48%, #4cc3ffcc 100%);
+}
+
+.ui.cards > .card > .content,
+.ui.card > .content {
+    padding: 1em 1em 0.9em;
+    flex-grow: 0;
+}
+
+.ui.inverted.dividing.header {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 3px 2px 7px #0000005e;
+    padding: 0 1em 1em;
+    margin-top: 0;
+}
+
+.ui.modal > .image.content {
+    align-items: flex-start;
+}
+
+.ui.dropdown.selected,
+.ui.dropdown .menu .selected.item {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ui.dimmer {
+background-color: rgba(0, 0, 0, 0.85);
+background-image: linear-gradient(240deg, #3d3393 0%, #2b76b9 35%, #2cacd1 65%, #35eb93 100%);
+animation-duration: 2s;
+animation-delay: 200ms;
+}
+
+.ui.cards > .card .content img.centered,
+.ui.card .content img.centered {
+    display: block;
+}
+
+.ui.label {
+    background-color: #c3e4ef;
+}
+
+.ui.black.ribbon.label {
+    border-color: #3884a0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.modal .content > .image {
+        width: auto;
+    }
+    .ui.menu.fixed.stackable {
+        position: static;
+    }
+    #content {
+        padding-top: 0;
+    }
+    .ui.segment.shelve,
+    .ui.segment.search,
+    .ui.segment.not-found {
+        margin: 2rem 0;
+    }
+}
+
+/*
+ * TOASTIFY
+ */
+
+.Toastify__toast--default {
+    color: #333333;
+}
+
+.Toastify__progress-bar--default {
+    background: linear-gradient(240deg, #3d3393 0%, #2b76b9 35%, #2cacd1 65%, #35eb93 100%);
+}
