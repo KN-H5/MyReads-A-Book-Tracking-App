@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Container, Header, Icon, Image, Menu } from 'semantic-ui-react';
 
-class MenuTop extends Component {
-    render() {
+function MenuTop() {
+
         return (
             <Menu as='header' fixed='top' inverted borderless stackable>
                 <Container id='branding'>
@@ -20,7 +20,6 @@ class MenuTop extends Component {
                 </Container>
             </Menu>
         );
-    }
 }
 
 export default MenuTop;

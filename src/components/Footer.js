@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import { Container, Header, Icon, Image, Segment } from 'semantic-ui-react';
+import React from 'react';
+import { Container, Header,Segment } from 'semantic-ui-react';
 
-class Footer extends Component {
-    render() {
+function Footer() {
         return (
             <Segment as='footer' vertical inverted id='footer-wrapper'>
                 <Container textAlign='center' id='footer-content'>
@@ -10,7 +9,6 @@ class Footer extends Component {
                 </Container>
             </Segment>
         );
-    }
 }
 
 export default Footer;

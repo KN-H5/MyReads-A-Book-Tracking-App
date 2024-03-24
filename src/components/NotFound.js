@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Message, Segment, Icon } from 'semantic-ui-react';
 
-class NotFound extends Component {
-
-    render() {
+function NotFound() {
 
         return (
             <Segment basic as='section' className='not-found'>
@@ -17,7 +15,6 @@ class NotFound extends Component {
             </Segment>
         );
 
-    }
 }
 
 export default NotFound;
