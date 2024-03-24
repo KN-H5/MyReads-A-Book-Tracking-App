@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "react-toastify": "^4.2.0",
     "semantic-ui-css": "^2.3.3",
-    "semantic-ui-react": "^0.82.2"
+    "semantic-ui-react": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,5 +20,17 @@
   },
   "description": "test",
   "main": "index.js",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
